@@ -16,6 +16,7 @@ class Example(commands.Cog):
         The main command which handles the code execution process.
         """
         await ctx.send(f"The number entered {num}")
+        await ctx.send(f"The number entered {num}+1")
 
 def setup(bot):
     bot.add_cog(Example(bot))
